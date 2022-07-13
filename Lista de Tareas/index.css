@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FAFAFA;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+header{
+    flex-direction: column;
+    background-color: rgb(9, 156, 53);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: rgb(235, 248, 47);
+}
+
+#descripcion{
+    background-color: #b3ff02;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10%;
+}
+
+#descripcion h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 80%;
+}
+
+.principal {
+	background: #186823;
+	color: #fff;
+	padding: 50px 0;
+	width: 100%;
+}
+
+.principal .formulario {
+	color: #212121;
+	text-align: center;
+
+}
+
+.principal .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+    border-radius: 10px;
+}
+
+.principal .formulario input[type=text].error {
+	border: 5px solid #D32F2F;
+	color: rgb(94, 255, 0);
+}
+
+.principal .formulario .boton {
+	background: none;
+	border: 2px solid #25f836;
+    border-radius: 6px;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+
+.principal .formulario .boton:hover {
+	border: 2px solid #fff;
+}
+
+/* - Tareas - */
+#tareas{
+    background-color: rgba(230, 230, 38, 0.89);
+    padding-bottom: 20%;
+    
+}
+
+#tareas h2{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+#tareas .lista {
+	list-style: none;
+}
+
+#tareas .lista li {
+	border-bottom: 1px solid #a89191;
+}
+
+#tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+#tareas .lista li a:hover {
+	text-decoration: line-through;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+#contacto div{
+    padding: 0px 7px;
+}
+
+#contacto a{
+    font-size: 13px;
+    padding: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#contacto a:hover{
+    color: rgb(122, 22, 216);
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 30, 30);
+    padding-bottom: 5px;
+}
+
+footer p{
+    padding-left: 20px;
+    font-size: 1em;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 640px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    nav{
+        padding: 10px 0px;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+    
+    header .nav-link{
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    .principal{
+        padding: 80px;
+    }
+
+    #descripcion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #descripcion .img-container{
+        background-image: url("img/organizar.webp");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 500px;
+    }
+
+    #descripcion .texto{
+        width: 45%;
+        padding: 0px 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+    }
+    
+    #final{
+        display: flex;
+        justify-content: space-between;
+        padding: -10%;
+    }
+
+    footer .container{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-right: 30px;       
+    }
+    
+    #contacto{
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+    }
+}

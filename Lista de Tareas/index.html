@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/016862bb4f.js" crossorigin="anonymous"></script>
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="/img/logo.png" alt="logo">
+                <h2 class="nombre">Project Javier</h2>
+            </a>
+            <nav>
+                <a href="#descripcion" class="nav-link">inicio</a>
+                <a href="#tareas" class="nav-link">tareas</a>
+                <a href="#contacto" class="nav-link">contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="Tareas">
+            <div class="principal">
+                <div class="wrap">
+                    <form class="formulario" action="">
+                        <input type="text" id="tareaInput" placeholder="Agrega tu tarea">
+                        <input type="button" class="boton" id="btn-agregar" value="Agregar Tarea">
+                    </form>
+                </div>
+            </div>
+            <div id="tareas">
+                <h2>Tareas Pendientes</h2>
+                <div class="wrap">
+                    <ul class="lista" id="lista">
+                        <li><a href="#">1 Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="#">2 Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="#">3 Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fecha">
+            
+        </section>
+        
+        <section id="descripcion">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>Objetivo</h2>
+                <p>Está página tiene el objetivo de ayudar a quellos despistados en la organización de sus resposabilidades/tareas, principalmente a los jóvenes quienes son los más propensos a olvidarlas al tener distraciones potentes como son los dispositivos electrónicos</p>
+            </div>
+            </section>
+    </main>
+
+    <footer id="final">
+        <section id="contacto">
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="https://mail.google.com/mail/u/0/">Gmail</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="(011) 9 11 3115 0442">Whatsapp</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <a href="https://m.facebook.com/login/?locale=es_ES">Facebook</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-twitter"></i>
+                <a href="https://twitter.com/?lang=es">Twitter</a>
+            </div>
+        </section>
+        <div class="container">
+            <img src="img/icono.jfif" alt="perfil">
+            <p>&copy; By Javier 2022</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
