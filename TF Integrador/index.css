@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nv-a:hover,
+.ranking-m:hover,
+.contacto-a:hover {
+    color: rgb(162, 0, 255);
+    cursor: pointer;
+}
+
+button, .boton, .imprimir {
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgb(84, 24, 139);
+}
+
+button:hover,
+.inicio, .boton:hover{
+    background-color: rgb(162, 0, 255);
+    cursor: pointer;
+}
+
+.inicio {
+    background-image: url(img/inicio.png);
+    background-position: center center;
+    background-size: cover;
+    width: 1.6rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    bottom: 30px;
+    right: 20px;
+}
+
+header {
+    background-color: #f5f5f5;
+}
+
+header .hd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+header .nv {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+
+.nv-a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    width: max-content;
+    margin: 0 auto 5px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/mascotas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#mascotas {
+    text-align: start;
+    padding: 5px 15px;
+    background-color: rgb(255, 231, 104);
+}
+
+.ranking-m {
+    text-decoration: none;
+    color: black;
+}
+
+#mascotas .hd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mascotas .img-ul {
+    display: flex;
+}
+
+#mascotas .img-hd {
+    height: auto;
+    width: 240px;
+    background-position: center center;
+    background-size: cover;
+}
+
+#mascotas .adopcion {
+    color: rgb(100, 74, 124);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#mascotas .form {
+    display: none;
+    margin-bottom: 16px;
+}
+
+/* --------------------------------- Formulario ------------------------------------ */
+#inputDia.error, #inputMes.error {
+	padding: 10px;
+	width: 100%;
+    border-radius: 10px;
+	border: 2px solid #D32F2F;
+}
+
+#mascotas .comprobante {
+    display: none;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(168, 168, 168);
+    background-color: rgba(253, 249, 238, 0.952);
+}
+
+/* --------------------------------------------------------------------------------- */
+
+#recomendacion {
+    text-align: center;
+    padding: 15px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(img/ranking/Marco.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#recomendacion p {
+    display: none;
+}
+
+#recomendacion .cartas {
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 1);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cartas:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/ranking/perro.jpg);
+}
+
+.cartas:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/ranking/gato.jpg);
+}
+
+.cartas:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/ranking/hamnsters.jpg);
+}
+
+.cartas:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/ranking/peces.jpg);
+}
+
+.cartas:last-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/ranking/pajaro.jpeg);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto {
+    margin-top: 8px;
+    display: flex;
+}
+
+.contacto-a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.2vh;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 30, 30);
+    padding-bottom: 5px;
+}
+
+.perfil img {
+    width: 40px;
+    height: auto;
+}
+
+.perfil p {
+    font-size: 1em;
+    padding-left: 20px;
+    margin: 0;
+}
+
+@media (min-width: 480px) {
+
+    header {
+        height: 7.5vh;
+        font-size: 18px;
+    }
+
+    header .hd {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .nv {
+        display: block;
+        padding: 0;
+    }
+
+    .nv-a {
+        margin: 0 16px;
+    }
+
+    #mascotas {
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #mascotas .contenido {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    #mascotas .img {
+        background-image: url(img/ranking/Ranking.png);
+        background-repeat: no-repeat;
+        background-position: start;
+        background-size: contain;
+        height: 330px;
+        width: 700px;
+    }
+
+    #mascotas .img-ul ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 550px;
+    }
+
+    #mascotas .img-hd {
+        display: none;
+    }
+
+    #mascotas .hd {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #mascotas .hd p {
+        margin: 16px 0 0;
+    }
+
+    #mascotas .pre-adopcion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #mascotas .pre-adopcion h3 {
+        width: 100%;
+    }
+
+    #mascotas .adopcion {
+        width: 40%;
+    }
+
+    #mascotas .c-texto {
+        width: 300px;
+    }
+
+    #recomendacion {
+        justify-content: center;
+    }
+
+    #recomendacion .difMascotas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    #recomendacion .cartas {
+        width: 300px;
+        height: 300px;
+        margin: 10px 40px;
+    }
+
+    #recomendacion .btn-carta {
+        display: none;
+    }
+
+    #recomendacion p {
+        display: block;
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    #recomendacion h3 {
+        margin-top: 0px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #contacto {
+        padding: 0px 10px;
+    }
+
+    .perfil {
+        padding-right: 20px;
+    }
+}
